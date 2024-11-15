@@ -41,9 +41,6 @@ const TableVehicles = ({ data }: IProps) => {
     setIsModalOpen(true); 
   };
 
-  const handleViewDetails = (id: number) => {
-    router.push(`/dashboard/vehicle/${id}`);
-  };
 
   return (
     <>
@@ -74,7 +71,7 @@ const TableVehicles = ({ data }: IProps) => {
                   >
                     <FiEdit/>
                   </button>
-                  <button onClick={() => handleViewDetails(vehicle.id)}><LuTimerReset/></button>
+                  <button onClick={() => router.push(`/dashboard/vehicles/maintenance/${vehicle.id}`)}><LuTimerReset/></button>
 
                   <button
                    
