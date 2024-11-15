@@ -27,20 +27,25 @@ function MaintenancePage() {
     }, [id]);
 
     if (!data) {
-        return <Spinner/>;
+        return <Spinner />;
     }
 
     return (
         <div className={styles.container}>
             <h1>Mantenimiento del Vehículo</h1>
-            <h2>ID: {data.id}</h2>
-            <p><strong>Marca:</strong> {data.make}</p>
-            <p><strong>Modelo:</strong> {data.model}</p>
-            <p><strong>Año:</strong> {data.year}</p>
-            <p><strong>Placa:</strong> {data.licensePlate}</p>
-            <img src={data.photo} alt="Foto" width="300" />
+            <div className={styles.vehicleInformation}>
+                <img src={data.photo} alt="Foto" width="300" />
+                <div > 
+                    <h2>ID: {data.id}</h2>
+                    <p><strong>Marca:</strong> {data.make}</p>
+                    <p><strong>Modelo:</strong> {data.model}</p>
+                    <p><strong>Año:</strong> {data.year}</p>
+                    <p><strong>Placa:</strong> {data.licensePlate}</p>
+                </div>
+            </div>
+
         </div>
     );
-}       
+}
 
 export default MaintenancePage;
