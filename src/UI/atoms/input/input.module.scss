@@ -1,0 +1,25 @@
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    input{
+        margin: 0 auto;
+        font-family: var(--font-principal);
+    }
+
+    .error{
+        width: 76%;
+        height: 2rem;
+        background: none;
+        border-radius: 0.4rem;
+        padding: 0.3rem;
+        border: 1px solid red;
+    }
+    
+    .errorText{
+        color: red;
+    }
+  
+}

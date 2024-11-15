@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label{
+        color: $Color-text;
+        font-weight: bold;
+    }
+
+    .input {
+        width: 100%;
+        height: 2rem;
+        background: none;
+        color: $disabled ;
+        font-weight: bold;
+        border: 1px solid $disabled;
+        border-radius: 0.4rem;
+        padding: 0.3rem;
+    }
+}

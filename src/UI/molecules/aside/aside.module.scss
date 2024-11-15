@@ -1,0 +1,85 @@
+@import "../../../styles/variables";
+
+.Aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.containetrTitle{
+    color: $Color-text;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #9E9E9E54;
+
+    h1{
+        font-size: 1rem;
+    }
+}
+
+.containerUser{
+    display: flex;
+    flex-direction: column;
+    color: $Color-Primary;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    p{
+        font-size: 1.3rem;
+        color: $Color-text;
+    }
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: column;
+
+    
+    Button{
+        background:none;
+        border: none;
+        height: 2.5rem;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        font-size: 1.3rem;
+        font-family: var(--font-principal);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.buttons{
+    background:none;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 560;
+    border-radius: 0.8rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.active{
+    box-shadow: 0 1px 2px #00000040;
+    color: $Color-Primary;
+}

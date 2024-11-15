@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+
+.Button{
+    width: 6rem;
+    padding: 0.6rem;
+    background-color: $Color-Primary;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 6rem;
+    padding: 0.6rem;
+    background-color: $Color-Primary;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

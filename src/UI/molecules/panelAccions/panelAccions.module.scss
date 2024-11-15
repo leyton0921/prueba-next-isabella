@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+
+.container{
+    display: flex;
+    gap: 1rem;
+
+    button{
+        width: 12rem;
+        height: 1rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 0.3rem;
+        border: none;
+    }
+}
+
+.addVehicle{
+    background-color: $Color-Primary;
+    color: white;
+}
+.download{
+    background-color: #217346;
+    color: white;
+}
+
+
